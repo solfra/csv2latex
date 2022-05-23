@@ -12,7 +12,7 @@ def convert(files):
 
     begin = r"\begin{tabular}{|*{"+str(nb_colone)+r"}{c|}}"
 
-    result = open("{}.txt".format(files), "w")
+    result = open("{}.txt".format(files[:-4]), "w")
     result.write(begin)
     result.write("\n" r"\hline")
 
